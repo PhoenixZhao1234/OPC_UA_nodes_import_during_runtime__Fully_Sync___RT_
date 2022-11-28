@@ -1,0 +1,72 @@
+Name: OPC_UA_nodes_import_during_runtime__Fully_Sync___RT_
+Id: g=4a595314c9195262bebc36605871f3ca
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=23123facc65a109cd139213ab4fbb432
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: PasswordPolicy
+  Id: g=294366f243b05948018856e7c364fc61
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=a0ab5ff58ddf65ba5dfceb73f7effbec
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=50ec130da60da5d970bd4a54b0aa1fdb
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=dd73d52be888041c9ea7dd719bda96ba
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=dd540f13d5814365c79a7dbe211b1b03
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: Locales
+  Id: g=ff78bb80d42275ffcfcb097ea29c2180
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- Name: LocaleFallbackList
+  Id: g=f222e128c2fbb6b522c3a3b631f4306b
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: DefaultUserFolder
+  Id: g=34d46593432c561983be55aabc3a0417
+  Type: NodePointer
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"243e94e55152590ab26b2f02eac9386d","Namespace":7}
+  Children:
+  - Name: Kind
+    Id: g=3224715a1319df9933bbde4fae8183dc
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":61}
